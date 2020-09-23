@@ -12,18 +12,18 @@ import kotlinx.android.synthetic.main.activity_main.*
 import java.security.AccessController
 
 class MainActivity : AppCompatActivity() {
- //   private lateinit var navController: NavController
+   private lateinit var navController: NavController
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-     //   setSupportActionBar(toolbar)
+        setSupportActionBar(toolbar)
 
-     //   navController = Navigation.findNavController(this,R.id.nav_host_fragment)
-   //     val appBarConfiguration = AppBarConfiguration(navController.graph)
+        navController = Navigation.findNavController(this,R.id.nav_host_fragment)
+        val appBarConfiguration = AppBarConfiguration(navController.graph)
         
 
-      //  bottom_nav.setupWithNavController(navController)
+       bottom_nav.setupWithNavController(navController)
 
      //   NavigationUI.setupActionBarWithNavController(this,navController)
 
